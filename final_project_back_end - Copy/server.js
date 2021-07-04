@@ -56,8 +56,6 @@ const PORT = process.env.PORT || 4002;
 
 mongoose.set("useNewUrlParser", true);
 
-const URL = `mongodb+srv://gavin:gavin123@cluster0.fe4dx.mongodb.net/final-prod?retryWrites=true&w=majority`;
-
 mongoose
   .connect(URL, { useUnifiedTopology: true })
   .then(() => {
